@@ -16,6 +16,8 @@ private:
     bool power;
     bool elevatorStuck;
     vector<Elevator*> elevators;
+    bool ElevatorCalled;//check if elevator is called or not
+    bool ElevatorButtonIlluminated;//check if elevator buttons are illuminated
 
 public:
 // not sure on what input will come in here
@@ -27,6 +29,12 @@ public:
     void FireCase();
     void overloadCase();
     void outage();
+    bool getElevatorCalled();
+    bool getElevatorButtonIlluminated();
+    bool setElevatorCalled();
+    bool setElevatorButtonIlluminated();
+    void printSafetyFeatures();//this will be the main display showing any safetyIssues - WILL BE CALLED WHEN SAFETY FEATURE IS TRIGGERED
+    void printNormalUpdates();//WILL BE CALLED WHEN TEST CASE IS SUCCESSFUL
 
 protected:
     bool hasElevatorArrived();
