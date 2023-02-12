@@ -5,9 +5,7 @@
 #include <string>
 
 #include "Elevator.h"
-#include "DisplayWindow.h"
-#include "Passenger.h"
-#include "ElevatorButton.h"
+
 
 class Control_Systems{
 private:
@@ -17,8 +15,7 @@ private:
     bool overload;
     bool power;
     bool elevatorStuck;
-    std::vector<Elevator*> elevators;
-    std::vector<passenger*> passengers;
+    vector<Elevator*> elevators;
     bool ElevatorCalled;//check if elevator is called or not
     bool ElevatorButtonIlluminated;//check if elevator buttons are illuminated
 
