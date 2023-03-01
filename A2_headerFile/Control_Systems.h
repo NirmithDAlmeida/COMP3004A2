@@ -20,7 +20,6 @@ private:
     std::vector<Elevator*> elevators;
     std::vector<passenger*> passengers;
     bool ElevatorCalled;//check if elevator is called or not
-    bool ElevatorButtonIlluminated;//check if elevator buttons are illuminated
 
 public:
 // not sure on what input will come in here
@@ -32,10 +31,8 @@ public:
     void FireCase();
     void overloadCase();
     void outage();
-    bool getElevatorCalled();
-    bool getElevatorButtonIlluminated();
-    bool setElevatorCalled();
-    bool setElevatorButtonIlluminated();
+    bool getElevatorCalled();//might not be necessary 
+    bool setElevatorCalled();//might not be necessary unless it is to call a available elevator
     void printSafetyFeatures();//this will be the main display showing any safetyIssues - WILL BE CALLED WHEN SAFETY FEATURE IS TRIGGERED
     void printNormalUpdates();//WILL BE CALLED WHEN TEST CASE IS SUCCESSFUL
 
